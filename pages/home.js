@@ -1,3 +1,4 @@
+import Bottom from '@/components/Bottom';
 import Header from '@/components/Header';
 import Product from '@/components/Product';
 import Sidebar from '@/components/Sidebar';
@@ -74,7 +75,7 @@ const home = () => {
 	return (
 		<>
 			<Header />
-			<div className='bg-gray-100 container max-w-screen-2xl mx-auto'>
+			<div className='bg-gray-100 container max-w-screen-2xl mx-auto pb-10'>
 				{/* App Bar */}
 				<div className=' bg-white rounded-md w-full'>
 					<div className='md:hidden mt-10 p-2  mb-6 flex justify-between items-center '>
@@ -146,7 +147,6 @@ const home = () => {
 						<Sort />
 					</div>
 					<div className=' col-span-12 md:col-span-8 lg:col-span-9'>
-						{' '}
 						<div className='grid gap-2 md:gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4   '>
 							{data.map((item) => (
 								<Product
@@ -162,6 +162,7 @@ const home = () => {
 					</div>
 				</div>
 			</div>
+			<Bottom />
 		</>
 	);
 };

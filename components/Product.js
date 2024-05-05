@@ -26,8 +26,8 @@ const Product = ({ title, brand, imgUrl, price, colors }) => {
 									className='w-4 h-4 md:w-5 md:h-5  stroke-white'
 								>
 									<path
-										stroke-linecap='round'
-										stroke-linejoin='round'
+										strokeLinecap='round'
+										strokeLinejoin='round'
 										d='m4.5 12.75 6 6 9-13.5'
 									/>
 								</svg>

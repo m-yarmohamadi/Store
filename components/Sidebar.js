@@ -6,7 +6,7 @@ import Pricesidebar from './Pricesidebar';
 
 const Sidebar = () => {
 	return (
-		<div className=' bg-white p-4 rounded-md shadow-md'>
+		<div className=' max-h-[calc(100vh_-_120px)] overflow-auto sticky top-[80px] bg-white p-4 rounded-md shadow-md'>
 			<div className='p-5'>
 				<div className='text-orange-400 font-bold text-xl'>دسته بندی</div>
 				<div className='my-5'>
