@@ -5,6 +5,10 @@ import Sidebar from '@/components/Sidebar';
 import Sort from '@/components/Sort';
 import React from 'react';
 import { VscAccount, VscChecklist, VscFilter, VscSearch } from 'react-icons/vsc';
+import { LiaFilterSolid, LiaSearchSolid, LiaSortAmountDownSolid } from "react-icons/lia";
+import { ImFilter } from "react-icons/im";
+
+
 
 const data = [
 	{
@@ -89,17 +93,17 @@ const home = () => {
 						</div>
 						<div className='bg-white p-1 rounded-md shadow-md w-7 h-7 flex justify-center items-center'>
 								
-								<VscSearch className='  text-slate-800'/>
+								<LiaSearchSolid className='  text-slate-800'/>
 						</div>
 					</div>
 				</div>
 				<div className='flex justify-between items-center gap-2 md:pt-2 mb-9'>
 					<div className='bg-white rounded-md w-full flex justify-start items-center p-2 shadow-sm'>
-						<VscChecklist className=' pe-2 w-8 h-8 text-orange-600 ' />
+						<LiaSortAmountDownSolid className=' pe-2 w-8 h-8 text-orange-600 ' />
 						<span className='text-sm font-medium text-slate-800'>محبوب ترین محصول</span>
 					</div>
 					<div className='bg-white rounded-md w-full flex justify-start items-center p-2 shadow-sm'>
-						<VscFilter className=' pe-2 w-8 h-8 text-orange-600' />
+						<LiaFilterSolid className=' pe-2 w-8 h-8 text-orange-600' />
 						<span className='text-sm font-medium text-slate-800'>فیلتر: برند اپل</span>
 					</div>
 				</div>
